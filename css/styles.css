@@ -260,9 +260,33 @@ About
   flex-direction: column;
   justify-content: center;
   justify-items: center;
+}
+.about-title {
+  margin-bottom: 2.5rem;
   text-align: center;
 }
-.about-container {
+.about-title span {
+  color: aqua;
+}
+.about-img {
+  display: inline-block;
+  width: 700px;
+}
+
+.about-content {
+  margin-top: 1.75rem;
+}
+.about-content-container {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+.about-content {
+  display: inline-block;
+  text-align: left;
+}
+/* .about-container {
   display: flex;
 
   background-color: antiquewhite;
@@ -271,6 +295,21 @@ About
   justify-content: center;
   justify-items: center;
   text-align: center;
+} */
+
+@media screen and (min-width: 998px) {
+  .about-content-container {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+  }
+  .about-content {
+    display: inline-block;
+    text-align: left;
+  }
+  .about-img {
+    width: 470px;
+  }
 }
 
 /* section add to globals */
