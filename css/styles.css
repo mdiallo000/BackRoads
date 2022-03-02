@@ -146,15 +146,35 @@ p {
   color: var(--clr-primary-1);
   background: var(--clr-primary-8);
 }
-
+.section {
+  padding: 5rem 0;
+}
+.title-wrapper {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.title-wrapper h2 {
+  text-transform: uppercase;
+}
+.title-wrapper span {
+  color: var(--clr-primary-5);
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    min-width: 95vw;
+  }
+}
 /*
 =============== 
 Navbar
 ===============
 */
-.header-nav {
-  /* background-color: var(--clr-grey-2); */
-}
+
 .nav-logo {
   width: 200px;
   /* background-color: antiquewhite; */
@@ -252,69 +272,16 @@ Hero
 =============== 
 About
 ===============
+===============
+===============
 */
-.about {
-  background-color: var(--clr-white);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-}
-.about-title {
-  margin-bottom: 2.5rem;
-  text-align: center;
-}
-.about-title span {
-  color: aqua;
-}
-.about-img {
-  display: inline-block;
-  width: 700px;
-}
-
-.about-content {
-  margin-top: 1.75rem;
-}
-.about-content-container {
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-}
-.about-content {
-  display: inline-block;
-  text-align: left;
-}
-/* .about-container {
-  display: flex;
-
-  background-color: antiquewhite;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-} */
-
-@media screen and (min-width: 998px) {
-  .about-content-container {
-    background-color: aqua;
+/* @media screen and (min-width: 992px) {
+  .about-center {
     display: flex;
     flex-direction: row;
   }
-  .about-content {
-    display: inline-block;
-    text-align: left;
-  }
-  .about-img {
-    width: 470px;
-  }
-}
-
-/* section add to globals */
-/* title add to globals */
-/* section center add to globals */
+  
+} */
 
 /*
 =============== 
