@@ -174,9 +174,7 @@ p {
 Navbar
 ===============
 */
-.header-nav {
-  /* background-color: var(--clr-grey-2); */
-}
+
 .nav-logo {
   width: 200px;
   /* background-color: antiquewhite; */
@@ -277,10 +275,14 @@ About
 ===============
 ===============
 */
-
-/* section add to globals */
-/* title add to globals */
-/* section center add to globals */
+@media screen and (min-width: 992px) {
+  .about-center {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 /*
 =============== 
